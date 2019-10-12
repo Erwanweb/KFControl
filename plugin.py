@@ -157,7 +157,7 @@ class BasePlugin:
                     Devices[6].Update(nValue = 0,sValue = "off")
 
         if (Unit == 5):
-            Devices[1].Update(nValue = 0,sValue = str(Level))
+            Devices[5].Update(nValue = 0,sValue = str(Level))
             if (Devices[5].sValue == "on"):
                 Domoticz.Debug("Moins push on")
                 Devices[5].Update(nValue = 1,sValue = "on")
@@ -171,7 +171,7 @@ class BasePlugin:
                         Domoticz.Debug("Alarm turned Off by Keyfob")
 
         if (Unit == 6):
-            Devices[1].Update(nValue = 0,sValue = str(Level))
+            Devices[6].Update(nValue = 0,sValue = str(Level))
             if (Devices[6].sValue == "on"):
                 Domoticz.Debug("Moins push on")
                 Devices[6].Update(nValue = 1,sValue = "on")

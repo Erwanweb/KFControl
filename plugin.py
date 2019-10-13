@@ -229,7 +229,7 @@ class BasePlugin:
                     "type=command&param=udevice&idx={}&nvalue=3&svalue=Commande depuis keyfob {} - Activation Protection Totale".format(
                         self.Alarmlog,Parameters["Mode5"]))
                 Domoticz.Debug("updating alarm log - Alarm turned Off by Keyfob")
-                DomoticzAPI("type=command&param=switchlight&idx={}&switchcmd=Set Level&level=40".format(self.Alarmcontrol))
+                DomoticzAPI("type=command&param=switchlight&idx={}&switchcmd=Set Level&level=20".format(self.Alarmcontrol))
                 Domoticz.Debug("Alarm turned On by Keyfob")
 
             if Devices[1].nValue == 1:
